@@ -1,0 +1,126 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+header {
+  padding: 20px 0;
+}
+
+header .row,
+footer .row {
+  display: flex;
+  align-items: center;
+}
+
+header h1 {
+  font-weight: 700;
+  margin: 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+header p {
+  padding: 0 20px;
+  margin: 0;
+}
+
+.jumbotron {
+  display: flex;
+  align-items: center;
+  background-image: url('http://cdn.shopify.com/s/files/1/1002/8716/files/Animana_043_-_Copy_1512x.jpg?v=1516647163');
+  background-size: cover;
+  color: #ffffff;
+  height: 500px;
+  text-shadow: 0.25px 0.25px 0.25px #000000;
+}
+
+.jumbotron h2 {
+  font-size: 60px;
+  font-weight: 700;
+  margin: 0;
+  color: #fff;
+}
+
+.jumbotron h3 {
+  margin: 0 0 20px;
+  color: #fff;
+}
+
+section .row img {
+  margin: 0 0 30px;
+  width: 100%;
+}
+
+.col-md-6 {
+  margin: 0 0 30px;
+}
+.btn.btn-primary {
+  border-radius: 2px;
+  border: 0px;
+  color: #fbd1d5;
+  text-shadow: none;
+  background-color: #ffffff;
+}
+
+.btn.btn-primary:hover {
+  color: #ffffff;
+  background-color: #fbd1d5;
+}
+
+.btn-secondary {
+  background-color: #E8DFE0;
+  color: #ffffff;
+  margin: 0 0 30px;
+}
+
+.flex-image {
+    display:flex;
+    align-items: center;
+}
+.flex-image img{
+    flex-grow:0;
+    flex-shrink:0;
+    width: 100%;
+    height: 100;
+}
+
+.imagetext {
+  margin: 0 0 30px;
+  width: 100%;
+  position:absolute;
+  padding: 10%;
+  text-align: center;
+  color:floralwhite;
+  font-size: 4vw;
+  text-shadow: 0.25px 0.25px 0.25px #000000;
+}
+
+.imagetext a {
+  text-decoration: none;
+  color: floralwhite;
+}
+
+footer {
+  font-size: 12px;
+  padding: 20px 0;
+  background-color: lightslategray;
+  width: 100%;
+}
+
+footer .col-sm-12 {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer li img {
+  width: 32px;
+  height: 32px;
+}
