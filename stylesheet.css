@@ -51,12 +51,15 @@ header p {
 }
 
 section .row img {
-  margin: 0 0 30px;
+  margin: 0 0 00px;
+  padding: 5%;
   width: 100%;
+  word-wrap:break-word;
+  overflow:hidden;
 }
 
 .col-md-6 {
-  margin: 0 0 30px;
+  margin: 0 0 00px;
 }
 .btn.btn-primary {
   border-radius: 2px;
@@ -80,28 +83,33 @@ section .row img {
 .flex-image {
     display:flex;
     align-items: center;
+    opacity: 0.7;
+    word-wrap:break-word;
+      font-size:8vh;
+      border-style:solid;
+      overflow:hidden;
 }
 .flex-image img{
     flex-grow:0;
     flex-shrink:0;
-    opacity: 0.7;
-    width: 100%;
-    height: 100;
-}
+    float: left;
+  width: 50%;
+  height: 50vh;
+  object-fit: cover;
+  }
 
-.flex-image img:hover {
+.flex-image:hover {
  opacity:1;
 }
 
 
 .imagetext {
-  margin: 0 0 30px;
   width: 100%;
   position:absolute;
-  padding: 10%;
   text-align: center;
   color:floralwhite;
-  font-size: 3em;
+  box-sizing:border-box;
+  object-fit:cover;
   text-shadow: 0.25px 0.25px 0.25px #000000;
 }
 
@@ -132,3 +140,6 @@ footer li img {
   height: 32px;
 }
 
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
