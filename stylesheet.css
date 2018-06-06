@@ -1,66 +1,36 @@
+html {
+  font-size:16px;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
-  font-weight: 300;
+  font-size:1em;
 }
 
-header {
-  padding: 20px 0;
+header .row {
+  display:flex;
+  border:solid;
 }
 
-header .row,
-footer .row {
-  display: flex;
-  align-items: center;
-}
-
-header h1 {
+header h2 {
   font-weight: 700;
+  padding:10px;
   margin: 0;
+  border:solid;
 }
 
-header nav {
-  display: flex;
-  justify-content: flex-end;
+nav {
+  display:flex;
+  align-items:center;
+  flex-direction:row;
+  float:right;
+  justify-content:space-between;
+  border:solid;
 }
 
-header p {
-  padding: 0 20px;
-  margin: 0;
-}
+@media only screen and (max-width: 600px) 
+{.row {flex-direction:column; justify-content: flex-end;}}
 
-.jumbotron {
-  display: flex;
-  align-items: center;
-  background-image: url('http://cdn.shopify.com/s/files/1/1002/8716/files/Animana_043_-_Copy_1512x.jpg?v=1516647163');
-  background-size: cover;
-  color: #ffffff;
-  height: 500px;
-  text-shadow: 0.25px 0.25px 0.25px #000000;
-}
-
-.jumbotron h2 {
-  font-size: 60px;
-  font-weight: 700;
-  margin: 0;
-  color: #fff;
-}
-
-.jumbotron h3 {
-  margin: 0 0 20px;
-  color: #fff;
-}
-
-section .row img {
-  margin: 0 0 00px;
-  padding: 5%;
-  width: 100%;
-  word-wrap:break-word;
-  overflow:hidden;
-}
-
-.col-md-6 {
-  margin: 0 0 00px;
-}
 .btn.btn-primary {
   border-radius: 2px;
   border: 0px;
@@ -80,43 +50,42 @@ section .row img {
   margin: 0 0 30px;
 }
 
-.flex-image {
-    display:flex;
-    align-items: center;
-    opacity: 0.7;
-    word-wrap:break-word;
-      font-size:8vh;
-      border-style:solid;
-      overflow:hidden;
-}
-.flex-image img{
-    flex-grow:0;
-    flex-shrink:0;
-    float: left;
-  width: 50%;
-  height: 50vh;
-  object-fit: cover;
-  }
-
-.flex-image:hover {
- opacity:1;
+.dropdown:hover .dropdown-menu {
+  display: block;
 }
 
+.image_container{
+  display:flex;
+  min-height:200px;
+  max-height:28vh;
+  padding:0;
+  align-items:center;
+  overflow:hidden;
+}
 
 .imagetext {
   width: 100%;
   position:absolute;
   text-align: center;
   color:floralwhite;
-  box-sizing:border-box;
   object-fit:cover;
+  align-self:center;
+  font-size:3rem;
   text-shadow: 0.25px 0.25px 0.25px #000000;
 }
-
 
 .imagetext a {
   text-decoration: none;
   color: floralwhite;
+  width:30%;
+}
+
+.hoveropacity {
+  opacity:0.85
+}
+
+.hoveropacity:hover{
+  opacity:1
 }
 
 footer {
@@ -140,6 +109,71 @@ footer li img {
   height: 32px;
 }
 
-.dropdown:hover .dropdown-menu {
-  display: block;
+
+#blog {
+  width:86%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#blog .post {
+  margin-top:12.5%;
+  margin-bottom:7.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Merriweather', serif;
+  font-weight: 300;
+  font-size: 1rem;
+  text-align:justify;
+  line-height: 1.8;
+  color: #444444;
+  width:60%;
+}
+
+.post h2 {
+  font-size:1.875rem;
+  
+}
+
+.post h3 {
+  font-size:1.125rem;
+  color: #999999;
+}
+
+#resp-table {
+width: 100%;
+display: table;
+}
+
+#resp-table-caption{
+display: table-caption;
+text-align: center;
+font-size: 30px;
+font-weight: bold;
+}
+
+#resp-table-header{
+display: table-header-group;
+background-color: gray;
+font-weight: bold;
+font-size: 25px;
+}
+.table-header-cell{
+display: table-cell;
+padding: 10px;
+text-align: justify;
+border-bottom: 1px solid black;
+}
+#resp-table-body{
+display: table-row-group;
+}
+.resp-table-row{
+display: table-row;
+}
+.table-body-cell{
+display: table-cell;
+text-align:right;
 }
