@@ -5,6 +5,7 @@ html {
 body {
   font-family: 'Roboto', sans-serif;
   font-size:1em;
+  padding-top: 70px;
 }
 
 header .row {
@@ -24,12 +25,17 @@ nav {
   align-items:center;
   flex-direction:row;
   float:right;
+  nav-right:auto;
   justify-content:space-between;
   border:solid;
 }
 
 @media only screen and (max-width: 600px) 
 {.row {flex-direction:column; justify-content: flex-end;}}
+
+@media only screen and (max-width: 600px) 
+{.nav {flex-direction:column; justify-content: flex-end;}}
+
 
 .btn.btn-primary {
   border-radius: 2px;
@@ -164,7 +170,7 @@ font-size: 25px;
 .table-header-cell{
 display: table-cell;
 padding: 10px;
-text-align: justify;
+text-align: left;
 border-bottom: 1px solid black;
 }
 #resp-table-body{
@@ -175,5 +181,6 @@ display: table-row;
 }
 .table-body-cell{
 display: table-cell;
-text-align:right;
+text-align:left;
+padding-left:10px;
 }
