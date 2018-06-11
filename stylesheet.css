@@ -43,15 +43,15 @@ navbar .navbar-default ,navbar-fixed-top
   border: 0px;
   color: white;
   text-shadow: none;
-  background-color: #7BBD82;
+  background-color: #5D9660;
     border-radius:0 !important;
     -webkit-border-radius:0 !important;
 }
 
 .btn.btn-primary:hover {
   background: #ffffff;
-  color: #7BBD82;
-  box-shadow: inset 0 0 0 3px #7BBD82;
+  color: #5D9660;
+  box-shadow: inset 0 0 0 3px #5D9660;
 }
 
 nav a {
@@ -60,15 +60,15 @@ nav a {
 }
 
 .btn-secondary {
-  background-color: #73BB77;
+  background-color: #5D9660;
   color: #ffffff;
   margin: 0 0 30px;
 }
 
 .btn-secondary:hover {
   background: #ffffff;
-  color: #73BB77;
-  box-shadow: inset 0 0 0 3px #73BB77;
+  color: #5D9660;
+  box-shadow: inset 0 0 0 3px #5D9660;
   
 }
 
