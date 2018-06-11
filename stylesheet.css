@@ -5,30 +5,11 @@ html {
 body {
   background-color: snow;
   font-family: 'Roboto', sans-serif;
-  font-size:1em;,
+  font-size:1em;
   padding-top: 70px;
 }
 
-.wrapper {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    width:86%;
-    margin: auto;
-}          
 
-#sidebar {
-  display:inline;
-  position:fixed;
-  overflow-x:hidden;
-  min-height:100vh;
-  align-content:center;
-  text-align:left;
-  color:black;
-  flex-direction:column;
-  padding-top:70px;
-  padding-right:5%;
-}
 
 header .row {
   display:flex;
@@ -59,7 +40,6 @@ navbar .navbar-default ,navbar-fixed-top
 {background-color: snow;}
 
 .btn.btn-primary {
-  border-radius: 2px;
   border: 0px;
   color: white;
   text-shadow: none;
@@ -128,15 +108,28 @@ nav a {
 
 .hoveropacity:hover{
   opacity:1
+} 
+
+#sidebar {
+			position: fixed;
+			min-height: 100vh;
+			padding-top: 70px;
+      padding-right:0px;
+			width: 20%;
+}
+
+ul {
+  float: right;
 }
 
 #blog {
-  position:relative;
-  width:75%;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  	width: 60%;
+		margin-left: 20%;
+		margin-right: 20%;
+    padding:0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #blog .post {
@@ -151,22 +144,30 @@ nav a {
   text-align:justify;
   line-height: 1.8;
   color: #444444;
-  width:75%;
+  width:100%;
+  padding-left: 5%;
+  padding-right: 10%;
 }
 
 .post h2 {
   font-size:1.875rem;
   color:#38573C;
+  align-items:left;
+  text-align:left;
 }
 
 .post h3 {
   font-size:1.125rem;
   color: #4B7D4F;
+  align-items:left;
+  text-align:left;
 }
 
 .post h4 {
   font-size:1rem;
   color: #518756;
+  align-items:left;
+  text-align:left;
 }
 
 
@@ -214,21 +215,19 @@ a, a:hover {
 .anchor { padding-top: 90px;
 margin-top:-75px;}
 
-@media only screen and (max-width: 600px) 
-{.wrapper {flex-direction:column;padding-top:20px;}}
-
-@media only screen and (max-width: 600px) 
-{#sidebar {display: flex; position:relative; flex-direction:column;}}
-
-@media only screen and (max-width: 600px) 
+@media only screen and (max-width: 858px) 
+{#blog {width: 100%;margin-left:0;margin-right:0;}} 
+@media only screen and (max-width: 858px) 
 {#blog .post {width: 90%;}}
 
+@media only screen and (max-width: 858px)
+{#sidebar {display:none;}}
 
-@media only screen and (max-width: 600px) 
+@media only screen and (max-width: 858px) 
 {header h2 {font-size:1em;}}
 
-@media only screen and (max-width: 600px) 
+@media only screen and (max-width: 858px) 
 {nav {flex-direction:column; justify-content: flex-end;}}
 
-@media only screen and (max-width: 600px) 
+@media only screen and (max-width: 858px) 
 {nav .navbar-right {flex-direction:row; justify-content: flex-end;}}
